@@ -1,0 +1,17 @@
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/bermuda']" routerLinkActive="active">bermuda</li>
+      </ol>
+    </nav>
+  </div>
+<div class="bermudas">
+<div class="bermudaCss" *ngFor = "let bermuda of bermudaIndependente">
+    <p>{{bermuda.nome}}</p>
+    <p>{{bermuda.tamanho}}</p>
+    <p>{{bermuda.valor}}</p>
+    <img [src]= "bermuda.imagem" >
+
+</div>
+</div>
