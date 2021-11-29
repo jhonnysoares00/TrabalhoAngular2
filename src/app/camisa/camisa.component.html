@@ -1,1 +1,19 @@
-<p>camisa works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/camisa']" routerLinkActive="active">CamisaIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="camisa">
+<div class="camisaCss" *ngFor = "let camisa of CamisaIndependente">
+    <p>{{camisa.nome}}</p>
+    <p>{{camisa.tamanho}}</p>
+    <p>{{camisa.valor}}</p>
+    <img [src]= "camisa.imagem" >
+
+</div>
+</div>
+
+

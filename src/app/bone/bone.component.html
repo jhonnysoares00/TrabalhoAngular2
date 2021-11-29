@@ -1,1 +1,18 @@
-<p>bone works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/bone']" routerLinkActive="active">boneIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="bone">
+<div class="boneCss" *ngFor = "let bone of boneIndependente">
+    <p>{{bone.nome}}</p>
+    <p>{{bone.tamanho}}</p>
+    <p>{{bone.valor}}</p>
+    <img [src]= "bone.imagem" >
+
+</div>
+</div>
+

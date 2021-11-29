@@ -1,1 +1,19 @@
-<p>regata works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/regata']" routerLinkActive="active">RegataIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="regata">
+<div class="regataCss" *ngFor = "let regata of RegataIndependente">
+    <p>{{regata.nome}}</p>
+    <p>{{regata.tamanho}}</p>
+    <p>{{regata.valor}}</p>
+    <img [src]= "regata.imagem" >
+
+</div>
+</div>
+
+

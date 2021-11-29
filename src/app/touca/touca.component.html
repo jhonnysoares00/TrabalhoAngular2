@@ -1,1 +1,19 @@
-<p>touca works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/touca']" routerLinkActive="active">ToucaIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="touca">
+<div class="toucaCss" *ngFor = "let touca of ToucaIndependente">
+    <p>{{touca.nome}}</p>
+    <p>{{touca.tamanho}}</p>
+    <p>{{touca.valor}}</p>
+    <img [src]= "touca.imagem" >
+
+</div>
+</div>
+
+

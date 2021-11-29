@@ -1,0 +1,19 @@
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/adesivo']" routerLinkActive="active">AdesivoIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="adesivo">
+<div class="adesivoCss" *ngFor = "let adesivo of AdesivoIndependente">
+    <p>{{adesivo.nome}}</p>
+    <p>{{adesivo.tamanho}}</p>
+    <p>{{adesivo.valor}}</p>
+    <img [src]= "adesivo.imagem" >
+
+</div>
+</div>
+
+

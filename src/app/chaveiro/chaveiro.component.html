@@ -1,1 +1,19 @@
-<p>chaveiro works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/chaveiro']" routerLinkActive="active">ChaveiroIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="chaveiro">
+<div class="chaveiroCss" *ngFor = "let chaveiro of ChaveiroIndependente">
+    <p>{{chaveiro.nome}}</p>
+    <p>{{chaveiro.tamanho}}</p>
+    <p>{{chaveiro.valor}}</p>
+    <img [src]= "chaveiro.imagem" >
+
+</div>
+</div>
+
+

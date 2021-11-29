@@ -1,1 +1,17 @@
-<p>blusa works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/blusa']" routerLinkActive="active">blusaIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="bermudas">
+<div class="bermudaCss" *ngFor = "let blusa of blusaIndependente">
+    <p>{{blusa.nome}}</p>
+    <p>{{blusa.tamanho}}</p>
+    <p>{{blusa.valor}}</p>
+    <img [src]= "blusa.imagem" >
+
+</div>
+</div>

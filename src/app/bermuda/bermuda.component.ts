@@ -38,25 +38,25 @@ imagem: 'assets/bermuda/Bermuda 1972.jpg',
 tamanho: 'G Adulto',
 valor: '55,00'
 },
-{nome: '',
-imagem: 'assets/bermuda/',
-tamanho: '',
-valor: ''
+{nome: 'Bermuda Capital',
+imagem: 'assets/bermuda/Bermuda Capital.jpg',
+tamanho: 'M Adulto',
+valor: '80,00'
 },
-{nome: '',
-imagem: 'assets/bermuda/',
-tamanho: '',
-valor: ''
+{nome: 'Bermuda Inglaterra Preta',
+imagem: 'assets/bermuda/Bermuda Inglaterra Preta.jpg',
+tamanho: 'M Adulto',
+valor: '72,00'
 },
-{nome: '',
-imagem: 'assets/bermuda/',
-tamanho: '',
-valor: ''
+{nome: 'Bermuda Branca Tradicional',
+imagem: 'assets/bermuda/Bermuda Branca Tradicional.jpg',
+tamanho: 'M Adulto',
+valor: '150,00'
 },
-{nome: '',
-imagem: 'assets/bermuda/',
-tamanho: '',
-valor: ''
+{nome: 'Bermuda Modelo2',
+imagem: 'assets/bermuda/Bermuda Modelo2.jpg',
+tamanho: 'G Adulto',
+valor: '70,00'
 }
 ]
   constructor() { }

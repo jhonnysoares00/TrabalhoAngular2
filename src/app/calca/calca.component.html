@@ -1,1 +1,19 @@
-<p>calca works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/calca']" routerLinkActive="active">CalcaIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="calca">
+<div class="calcaCss" *ngFor = "let calca of CalcaIndependente">
+    <p>{{calca.nome}}</p>
+    <p>{{calca.tamanho}}</p>
+    <p>{{calca.valor}}</p>
+    <img [src]= "calca.imagem" >
+
+</div>
+</div>
+
+

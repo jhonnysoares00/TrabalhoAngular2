@@ -1,1 +1,19 @@
-<p>chinelo works!</p>
+<div class="container ">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/home']" routerLinkActive="active">Inicio</a></li>
+        <li class="breadcrumb-item" [routerLink]="['/chinelo']" routerLinkActive="active">ChineloIndependente</li>
+      </ol>
+    </nav>
+  </div>
+<div class="chinelo">
+<div class="chineloCss" *ngFor = "let chinelo of ChineloIndependente">
+    <p>{{chinelo.nome}}</p>
+    <p>{{chinelo.tamanho}}</p>
+    <p>{{chinelo.valor}}</p>
+    <img [src]= "chinelo.imagem" >
+
+</div>
+</div>
+
+
